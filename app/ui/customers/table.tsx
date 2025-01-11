@@ -1,10 +1,12 @@
-import Image from 'next/image';
-import { lusitana } from '@/app/ui/fonts';
-import Search from '@/app/ui/search';
+import Image from "next/image";
+import Search from "@/app/ui/search";
 import {
   CustomersTableType,
   FormattedCustomersTable,
-} from '@/app/lib/definitions';
+} from "@/app/lib/definitions";
+import { Lusitana } from "next/font/google";
+
+const lusitana = Lusitana({ subsets: ["latin"], weight: "400" });
 
 export default async function CustomersTable({
   customers,
